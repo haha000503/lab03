@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="citybg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#151b3d"/>
+      <stop offset="1" stop-color="#241a4d"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2f80ed"/>
+      <stop offset="1" stop-color="#8b5cf6"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#citybg)"/>
+  <!-- title bar -->
+  <rect x="240" y="18" width="320" height="30" rx="15" fill="none" stroke="url(#glow)" stroke-width="2"/>
+  <text x="316" y="39" font-size="17" font-weight="bold" fill="#8fd0ff">城 市 脉 搏</text>
+  <!-- map panel -->
+  <rect x="30" y="70" width="380" height="250" rx="12" fill="#1d2452" stroke="#3a4a8c" stroke-width="2"/>
+  <g stroke="#33406e" stroke-width="2">
+    <path d="M50 120h340M50 180h340M50 240h340M50 290h340M110 90v210M190 90v210M270 90v210M350 90v210"/>
+  </g>
+  <path d="M60 290Q140 180 200 220T340 120" stroke="#2f80ed" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M70 130Q180 200 250 160T370 250" stroke="#8b5cf6" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <g fill="#4fb3ff"><circle cx="60" cy="290" r="7"/><circle cx="200" cy="220" r="7"/><circle cx="340" cy="120" r="7"/></g>
+  <g fill="#c39bff"><circle cx="70" cy="130" r="7"/><circle cx="250" cy="160" r="7"/><circle cx="370" cy="250" r="7"/></g>
+  <circle cx="200" cy="220" r="16" fill="#2f80ed" opacity="0.3"/>
+  <circle cx="370" cy="250" r="16" fill="#8b5cf6" opacity="0.3"/>
+  <!-- right top: weather -->
+  <rect x="430" y="70" width="340" height="110" rx="12" fill="#1d2452" stroke="#3a4a8c" stroke-width="2"/>
+  <circle cx="490" cy="125" r="28" fill="#ffd166"/>
+  <g stroke="#ffd166" stroke-width="4" stroke-linecap="round"><path d="M490 82v-12M490 168v12M447 125h-12M533 125h12M460 95l-9-9M520 95l9-9M460 155l-9 9M520 155l9 9"/></g>
+  <text x="545" y="118" font-size="26" font-weight="bold" fill="#fff">26°C</text>
+  <text x="545" y="146" font-size="13" fill="#8fd0ff">晴 · 空气质量优</text>
+  <rect x="680" y="96" width="70" height="10" rx="5" fill="#2f80ed"/>
+  <rect x="680" y="118" width="52" height="10" rx="5" fill="#27ae60"/>
+  <rect x="680" y="140" width="60" height="10" rx="5" fill="#8b5cf6"/>
+  <!-- right bottom: traffic flow chart -->
+  <rect x="430" y="196" width="340" height="124" rx="12" fill="#1d2452" stroke="#3a4a8c" stroke-width="2"/>
+  <polyline points="450,290 490,250 530,268 570,225 610,240 650,212 690,230 750,205" fill="none" stroke="#4ade80" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline points="450,300 490,282 530,292 570,262 610,272 650,250 690,262 750,240" fill="none" stroke="#ff8f6b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#4ade80"><circle cx="570" cy="225" r="6"/><circle cx="750" cy="205" r="6"/></g>
+  <!-- bottom stat cards -->
+  <g font-size="12">
+    <rect x="30" y="340" width="170" height="80" rx="12" fill="#1d2452" stroke="#3a4a8c" stroke-width="2"/>
+    <text x="50" y="368" fill="#8fa3d8">拥堵指数</text>
+    <text x="50" y="398" font-size="22" font-weight="bold" fill="#ffd166">1.42</text>
+    <rect x="220" y="340" width="170" height="80" rx="12" fill="#1d2452" stroke="#3a4a8c" stroke-width="2"/>
+    <text x="240" y="368" fill="#8fa3d8">在途车辆</text>
+    <text x="240" y="398" font-size="22" font-weight="bold" fill="#4fb3ff">38,204</text>
+    <rect x="410" y="340" width="170" height="80" rx="12" fill="#1d2452" stroke="#3a4a8c" stroke-width="2"/>
+    <text x="430" y="368" fill="#8fa3d8">平均车速</text>
+    <text x="430" y="398" font-size="22" font-weight="bold" fill="#4ade80">42 km/h</text>
+    <rect x="600" y="340" width="170" height="80" rx="12" fill="#1d2452" stroke="#3a4a8c" stroke-width="2"/>
+    <text x="620" y="368" fill="#8fa3d8">今日降水概率</text>
+    <text x="620" y="398" font-size="22" font-weight="bold" fill="#c39bff">10%</text>
+  </g>
+</svg>
